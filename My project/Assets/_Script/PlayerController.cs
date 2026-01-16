@@ -1,9 +1,8 @@
-using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 3f;
 
     void Start()
     {
@@ -13,9 +12,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float horizon = Input.GetAxis("Horizontal");
-        float vertica = Input.GetAxis("Vertical");
+        float vertical = Input.GetAxis("Vertical");
 
-        transform.Translate(new Vector2(horizon, vertica) * speed * Time.deltaTime);
-        
+        transform.Translate(new Vector2(horizon, vertical) * Time.deltaTime * speed);
     }
 }
