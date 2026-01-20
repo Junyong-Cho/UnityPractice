@@ -13,6 +13,10 @@ public class EnemySmallController : MonoBehaviour
         transform.Translate(0, -1f * Time.deltaTime, 0);
     }
 
+    private void OnDestroy()
+    {
+        SoundSingleton.instance.DieDragon();
+    }
 
     void OnBecameInvisible()
     {

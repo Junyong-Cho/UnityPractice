@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5868969737553817267}
   - component: {fileID: 124624580150159292}
   m_Layer: 0
-  m_Name: CFXR Explosion Smoke 2 Solo (HDR)
+  m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
